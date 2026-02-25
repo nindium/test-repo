@@ -1,0 +1,125 @@
+# --------------------------------------------------
+# Terraform
+# --------------------------------------------------
+# Local .terraform directories
+.terraform/
+
+# .tfstate files and backups (contain state and potentially sensitive data)
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which might contain sensitive data like passwords or keys
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used for local development
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore transient lock info files
+.terraform.tfstate.lock.info
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Optional: ignore graph output files
+# *.dot
+
+# Optional: ignore plan files saved before destroying Terraform configuration
+# planout
+
+# --------------------------------------------------
+# Java
+# --------------------------------------------------
+# Generated class files
+*.class
+
+# Package Files
+# *.jar
+# *.war
+# *.ear
+
+# Maven-generated directories
+target/
+
+# Gradle-generated directories
+.gradle/
+build/
+
+# IDE specific files and directories
+.idea/ # Intellij
+.vscode/ # VS Code
+*.iml
+*.iws
+*.ipr
+
+# --------------------------------------------------
+# Node.js and JavaScript
+# --------------------------------------------------
+# Dependency directory
+node_modules/
+/jspm_packages/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build/dist folders
+dist/
+build/
+*.tsbuildinfo
+
+# Optional: Environments
+.env
+.venv
+
+# --------------------------------------------------
+# Python
+# --------------------------------------------------
+# Byte-compiled and optimized files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# IDE-specific
+.idea/ # Intellij, PyCharm
+
+# Virtual environment
+.venv/
+venv/
+env/
+# Pip-files
+pip-log.txt
+pip-delete-this-arg.txt
+
+# Unit test / coverage
+.coverage
+.tox/
+
+# Distributions
+dist/
+build/
+
+# --------------------------------------------------
+# General
+# --------------------------------------------------
+# Operating System files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Temporary files
+*.tmp
+*~
+# Ignore files that may contain sensitive credentials
+*.key
+*.pem

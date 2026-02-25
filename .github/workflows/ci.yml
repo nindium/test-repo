@@ -1,0 +1,13 @@
+name: CI Build
+
+on:
+  push:
+    branches: ['**']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pwd
+      - run: ls -la
+      - run: pipeline_resources/scripts/ci_init.sh
