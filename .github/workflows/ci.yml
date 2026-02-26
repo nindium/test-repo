@@ -9,6 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pwd
-      - run: ls -la
       - run: pipeline_resources/scripts/ci_init.sh
+
+  deploy-dev:
+    needs: build
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "${PWD}/pipeline_resources/scripts" >> $GITHUB_PATH
+      - run: deploy.sh "dev"
