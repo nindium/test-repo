@@ -16,7 +16,7 @@ jobs:
     if: github.ref != 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
-      name: dev
+      name: manual-trigger
 
     steps:
       - uses: actions/checkout@v4
