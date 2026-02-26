@@ -18,7 +18,6 @@ jobs:
     environment:
       name: dev
 
-
     steps:
       - uses: actions/checkout@v4
       - run: echo "${PWD}/pipeline_resources/scripts" >> $GITHUB_PATH
